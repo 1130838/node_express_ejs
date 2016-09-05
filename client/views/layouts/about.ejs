@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= title %></title>
+    <title>About page</title>
 
     <!-- Latest compiled and minified CSS (overwrites the previous css with same tags )-->
     <link rel="stylesheet"
@@ -18,11 +18,11 @@
 </head>
 
 <body>
-
 <% include ../partials/navbar.ejs%>
 
-<p>i will be the about view !</p>
-
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+<% include ../partials/partial.ejs %>
 </body>
 
 <!-- Latest compiled and minified Jquery -->
