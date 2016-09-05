@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose= require('mongoose');
 
 var routes = require('./server/routes/index');
 var about = require('./server/routes/about');
@@ -12,6 +13,8 @@ var randomName = require('./server/routes/randomName');
 
 
 var app = express();
+
+mongoose.connect('localhost:27017/shoppingDB');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'client/views/layouts'));
